@@ -11,7 +11,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #2D2D2D;
-    background-image: url('./VIDEOPROJECTS/img/fundo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -24,20 +23,67 @@ body {
     position: relative;
 }
 
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgb(8, 8, 8);
+    display: block;
+    margin: 0 auto;
+}
+
+.card-text-foto {
+    width: 75%;
+    letter-spacing: 1px;
+}
+
+.foto-container {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    display: flex;
+}
+
+.name-foto {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    display: block;
+}
+
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
 h2 {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+
+}
+
+.descricao-box {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(8, 8, 8);
+}
+
+.descricao {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+    display: block;
 }
 
 .social-media {
-    margin-top: 1rem;
+    margin-inline-start: 62%;
     display: flex;
+    margin-top: 3%;
 }
 
 .social-media a {
@@ -184,7 +230,7 @@ a:hover {
 
 .container {
     height: auto;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -218,9 +264,14 @@ a:hover {
 }
 
 .card-text {
-    width: 40%;
+    width: 65%;
     letter-spacing: 1px;
+    height: auto;
     color: rgb(109, 109, 109);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 .card-wrapper {
