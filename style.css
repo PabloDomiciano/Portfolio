@@ -9,7 +9,7 @@ body {
 
 .header-container {
     height: 100vh;
-    width: 100vw;
+    
     background-color: #2D2D2D;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,20 +17,34 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     box-sizing: border-box;
     padding: 0 112px;
-    position: relative;
+
 }
 
-.header-sobre{
-    margin-left: 55px;
+
+.header-container-sobre {
+    height: 100vh;
+    background-color: #2D2D2D;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 112px;
+}
+
+.header-sobre {
     display: block;
 }
 
 .foto-perfil {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid rgb(8, 8, 8);
@@ -58,7 +72,7 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -99,12 +113,12 @@ h2 {
     padding: 20px;
     margin-bottom: 30px;
     border: 1px solid rgb(8, 8, 8);
-    width: 46vw;
+    width: 39vw;
 }
 
 .descricao {
     font-size: 18px;
-    color: #777;
+    color: #ffffff;
     line-height: 1.5;
     margin-bottom: 30px;
     text-align: justify;
@@ -112,9 +126,9 @@ h2 {
 }
 
 .social-media {
-    margin-inline-start: 62%;
+    margin-inline-start: 30%;
     display: flex;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .social-media a {
@@ -139,10 +153,10 @@ a:hover {
     display: flex;
     justify-content: center;
     list-style-type: disclosure-closed;
-    border-radius: 5px;
     padding: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 0px;
     border: 2px solid rgb(8, 8, 8);
+    background-color: #2D2D2D;
 
 }
 
@@ -165,7 +179,7 @@ a:hover {
 
 .container {
     height: auto;
-    width: 100vw;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
