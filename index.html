@@ -4,24 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type href="style.css">
+        <link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
         <title>Meu portfólio</title>
     </head>
     <body>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Meu Portfólio</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="main">
-            <h1>Pablo Henrique Lopes Domiciano</h1>
-            <hr />
-            <h3>Me chamo Pablo Henrique, tenho 21 anos e estou me formando em
-                Engenharia de Software no Instituto Federal de Paranavaí.</h3>
-
-            <p>Sou apaixonado por tecnologia e desenvolvimento de software,
-                sempre buscando aprender e aplicar novos conhecimentos em
-                projetos práticos.
-                Ao longo da minha formação, desenvolvi habilidades em diversas
-                áreas, como programação, desenvolvimento web, e gestão de
-                projetos. Estou constantemente
-                aprimorando minhas competências para me tornar um profissional
-                completo e preparado para os desafios do mercado de trabalho.
-            </p>
+            <div class="adjustmentHeader">
+                <div class="textContainer">
+                    <h1>Pablo Henrique L. Domiciano</h1>
+                    <p class="p-description">
+                        Sou apaixonado por tecnologia e desenvolvimento de software, 
+                        sempre buscando aprender e aplicar novos conhecimentos em projetos práticos. 
+                        Ao longo da minha formação, desenvolvi habilidades em diversas áreas, como programação, 
+                        desenvolvimento web, e gestão de projetos. Estou constantemente aprimorando minhas
+                        competências para me tornar um profissional completo e preparado para os desafios 
+                        do mercado de trabalho.
+                    </p>
+                </div>
+                <img class="imgBody" src="img/perfil.jpg" alt="Foto de perfil">
+            </div>
+        </div>
+            <div class="social-container">
+                <a href="https://www.linkedin.com" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com" class="social-link facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
             <div class="row">
                 <div class="column">
                     <div class="content">
@@ -32,16 +53,13 @@
                         </div>
                         <div>
                             <h3>Projeto 1</h3>
-                            <p class="text-description">O {nome projeto} é
-                                um
-                                projeto inovador que visa
-                                [objetivo principal do projeto]. Este
-                                projeto
+                            <p class="text-description">
+                                O {nome projeto} é um projeto inovador que visa
+                                [objetivo principal do projeto]. Este projeto
                                 irá [descrever brevemente o escopo e as
                                 principais atividades], buscando [resultado
                                 esperado ou impacto pretendido]. Através de
-                                [métodos ou tecnologias utilizadas],
-                                esperamos
+                                [métodos ou tecnologias utilizadas], esperamos
                                 [benefício ou transformação desejada].</p>
                         </div>
                     </div>
@@ -55,16 +73,13 @@
                         </div>
                         <div>
                             <h3>Projeto 2</h3>
-                            <p class="text-description">O {nome projeto} é
-                                um
-                                projeto inovador que visa
-                                [objetivo principal do projeto]. Este
-                                projeto
+                            <p class="text-description">
+                                O {nome projeto} é um projeto inovador que visa
+                                [objetivo principal do projeto]. Este projeto
                                 irá [descrever brevemente o escopo e as
                                 principais atividades], buscando [resultado
                                 esperado ou impacto pretendido]. Através de
-                                [métodos ou tecnologias utilizadas],
-                                esperamos
+                                [métodos ou tecnologias utilizadas], esperamos
                                 [benefício ou transformação desejada].</p>
                         </div>
                     </div>
@@ -78,21 +93,37 @@
                         </div>
                         <div>
                             <h3>Projeto 3</h3>
-                            <p class="text-description">O {nome projeto} é
-                                um
-                                projeto inovador que visa
-                                [objetivo principal do projeto]. Este
-                                projeto
+                            <p class="text-description">
+                                O {nome projeto} é um projeto inovador que visa
+                                [objetivo principal do projeto]. Este projeto
                                 irá [descrever brevemente o escopo e as
                                 principais atividades], buscando [resultado
                                 esperado ou impacto pretendido]. Através de
-                                [métodos ou tecnologias utilizadas],
-                                esperamos
+                                [métodos ou tecnologias utilizadas], esperamos
                                 [benefício ou transformação desejada].</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="content">
+                <img class="imgDirector" src="./img/projetoPrincipal.jpg"
+                    alt-="Projeto principal" />
+                <h3>Projeto Principal</h3>
+                <div class="project">
+                <p class="project-description">
+                    O {nome projeto} éum
+                    projeto inovador que visa
+                    [objetivo principal do projeto]. Este
+                    projeto irá [descrever brevemente o escopo e as
+                    principais atividades], buscando [resultado
+                    esperado ou impacto pretendido]. Através de
+                    [métodos ou tecnologias utilizadas],
+                    esperamos [benefício ou transformação desejada].</p>
+                </div>
+            </div>
         </div>
+        <footer class="footer">
+            &copy; 2024 Pablo Henrique L. Domiciano. Todos os direitos reservados.
+        </footer>
     </body>
 </html>
