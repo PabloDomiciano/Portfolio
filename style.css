@@ -39,7 +39,6 @@ h1 {
 }
 
 .p-description {
-
   border-radius: 20px;
   padding: 20px;
   background-color: #3f93ecc4;
@@ -174,9 +173,10 @@ h1 {
 }
 
 .imgDirector {
-  border: 1px solid black;
+  border: 3px solid black;
   width: 100%;
-  border-radius: 25%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .container-button {
@@ -351,7 +351,7 @@ nav {
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .contact-container p {
@@ -373,10 +373,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .contact-container p{
+  .contact-container p {
     font-size: larger;
   }
-  .contact-container a{
+  .contact-container a {
     font-size: larger;
   }
 }
