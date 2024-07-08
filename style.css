@@ -383,3 +383,13 @@ nav {
   padding: 20px 0;
   font-weight: bold;
 }
+
+
+.github-container{
+  border: 3px solid black;
+  margin: auto;
+  height: 300px;
+  background-color: #272727;
+  width: 750px;
+  border-radius: 10px;
+}
