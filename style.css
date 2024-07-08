@@ -369,3 +369,12 @@ nav {
 .contact-container a:hover {
   color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .contact-container p{
+    font-size: larger;
+  }
+  .contact-container a{
+    font-size: larger;
+  }
+}
