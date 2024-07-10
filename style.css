@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(245, 245, 245, 0.884);
+  background-color: var(--background-body, #fff);
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;
@@ -35,7 +35,7 @@ h1 {
 .p-description {
   border-radius: 10px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color:var(--background-container,#fff);
   border: 2px solid #e0e0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
@@ -66,12 +66,13 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--background-container), #fff;
 }
 
 .column {
   flex: 1 1 300px;
   margin: 10px;
-  background-color: #f9f9f9;
+  background-color: var(--background-container, #fff);
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -158,7 +159,7 @@ h1 {
 }
 
 .content {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-container, #fff);
   padding: 20px;
   border-radius: 10px;
 }
@@ -204,7 +205,7 @@ h1 {
 }
 
 .text-description {
-  background-color: #f9f9f9;
+  background-color:var(--background-container,#fff);
   border: 2px solid #e0e0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -309,12 +310,12 @@ nav {
 .project-description {
   border-radius: 10px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color:var(--background-container,#fff);
   border: 2px solid #e0e0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 20px;
   line-height: 1.5;
-  color: #333;
+  color: #000000;
   margin: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -391,4 +392,34 @@ nav {
   .contact-container a {
     font-size: larger;
   }
+}
+
+[data-tema="dark"] {
+  --background-body: #202020;
+  --background-container: #2b2a2a;
+  --color-body: #f0eeee;
+  color: white;
+}
+
+[data-tema="light"] {
+  --background-body: #e2e0e0;
+  --background-container: #f7f4f4;
+  --color-body: #292828;
+  color: black;
+}
+
+[data-tema="dark"] .social-link {
+  color: white;
+}
+/* Efeito hover para o tema escuro */
+[data-tema="dark"] .social-link.linkedin:hover {
+  color: #0077b5; 
+}
+
+[data-tema="dark"] .social-link.facebook:hover {
+  color: #3b5998; 
+}
+
+[data-tema="dark"] .social-link.instagram:hover {
+  color: #ff6f61; 
 }

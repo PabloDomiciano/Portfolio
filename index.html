@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>Meu portfólio</title>
     </head>
-    <body>
+    <body >
         <nav>
             <div class="container">
                 <div class="logo">
@@ -18,13 +18,14 @@
                     <li><a href="index.html">Início</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#" onclick="alterarTema()" id="linkAlterarTema">Alterar Tema</a></li>
                 </ul>
             </div>
         </nav>
         <div class="main">
             <div class="adjustmentHeader">
                 <div class="textContainer">
-                    <h1>Pablo Henrique L. Domiciano</h1>
+                    <h1 id="page-title">Pablo Henrique L. Domiciano</h1>
                     <p class="p-description">
                         Sou apaixonado por tecnologia e desenvolvimento de software, 
                         sempre buscando aprender e aplicar novos conhecimentos em projetos práticos. 
@@ -110,7 +111,7 @@
                     alt-="Projeto principal" />
                 <h3 style="margin-left: 15px; margin-top: 10px;">Gerenciador MicroDevs</h3>
                 <div class="project">
-                <p class="project-description">
+                <p class="p-description">
                     Esse sistema é projetado para gerenciar e organizar projetos de maneira eficiente, 
                     utilizando um formato semelhante ao método Kanban. O usuário, geralmente o proprietário
                     de uma empresa, pode adicionar e gerenciar projetos, incluindo detalhes como nome, orçamento,
@@ -128,5 +129,6 @@
         <footer class="footer">
             &copy; 2024 Pablo Henrique L. Domiciano. Todos os direitos reservados.
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
