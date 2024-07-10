@@ -18,10 +18,14 @@ function alterarTema() {
   atualizarBotaoTema(novoTema);
 }
 
-function atualizarBotaoTema(novoTema) {
+function atualizarBotaoTema() {
+  const tema = document.body.getAttribute("data-tema");
   const botaoTema = document.getElementById("theme-toggle");
-  botaoTema.style.justifyContent =
-    novoTema === "dark" ? "flex-end" : "flex-start";
+  if (tema === "dark") {
+    botaoTema.style.justifyContent = "flex-end";
+  } else {
+    botaoTema.style.justifyContent = "flex-start";
+  }
 }
 
 document.getElementById("theme-toggle").addEventListener("click", alterarTema);
