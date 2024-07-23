@@ -515,8 +515,8 @@ nav {
 
 .skill {
   display: flex;
-  align-items: center; 
-  gap: 40px; 
+  align-items: center;
+  gap: 40px;
   width: 100%;
 }
 
@@ -533,17 +533,59 @@ nav {
 
 .skill-name {
   font-weight: bold;
-  margin: 0; 
+  margin: 0;
   font-size: large;
 }
 
 .text-habilidades {
-  margin: 0; 
+  margin: 0;
   font-size: 15px;
   margin-right: 40px;
 }
 
-.title-skills{
-  text-align: center; 
+.title-skills {
+  text-align: center;
   margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    margin: 12px;
+  }
+
+  .skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .text-habilidades {
+    font-size: 13px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    margin: 10px;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .skill img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text-habilidades {
+    font-size: 15px;
+    margin: 10px;
+    
+  }
 }
