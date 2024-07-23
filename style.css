@@ -54,7 +54,7 @@ h1 {
 
 .main {
   width: 100%;
-  margin: 80px auto 20px;
+  margin: 80px auto 70px;
   padding: 0 20px;
 }
 
@@ -339,9 +339,9 @@ nav {
 .github-container {
   border: 3px solid black;
   margin: auto;
-  height: 300px;
+  height: 400px;
   background-color: #272727;
-  width: 750px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -454,7 +454,7 @@ nav {
 }
 
 [data-tema="dark"] .theme-toggle .toggle-icon {
-  transform: translateX(3px); 
+  transform: translateX(3px);
 }
 
 [data-tema="light"] .theme-toggle {
@@ -462,5 +462,56 @@ nav {
 }
 
 [data-tema="light"] .theme-toggle .toggle-icon {
-  transform: translateX(0); 
+  transform: translateX(0);
+}
+
+.github-repos-container {
+  padding: 20px;
+  background-color: var(--background-body, #fff);;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.github-repos-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-body);
+}
+
+.repo {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--background-container, #fff);;
+}
+
+.repo h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.repo p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: var(--color-body);
+  
+}
+
+@media (max-width: 768px) {
+  .github-repos-container {
+      padding: 10px;
+  }
+
+  .repo {
+      padding: 10px;
+  }
+
+  .repo h3 {
+      font-size: 1em;
+  }
+
+  .repo p {
+      font-size: 1em;
+  }
 }
