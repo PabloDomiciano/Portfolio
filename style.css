@@ -176,15 +176,6 @@ h1 {
   margin: 10px auto;
 }
 
-.imgDirector {
-  background-color: #f9f9f9;
-  border: 2px solid #e0e0e0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
 .container-button {
   text-align: right;
 }
@@ -467,7 +458,7 @@ nav {
 
 .github-repos-container {
   padding: 20px;
-  background-color: var(--background-body, #fff);;
+  background-color: var(--background-body, #fff);
   border-radius: 8px;
   margin: 20px 0;
 }
@@ -483,7 +474,7 @@ nav {
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
-  background-color: var(--background-container, #fff);;
+  background-color: var(--background-container, #fff);
 }
 
 .repo h3 {
@@ -495,23 +486,64 @@ nav {
   margin: 5px 0 0;
   font-size: 0.9em;
   color: var(--color-body);
-  
 }
 
 @media (max-width: 768px) {
   .github-repos-container {
-      padding: 10px;
+    padding: 10px;
   }
 
   .repo {
-      padding: 10px;
+    padding: 10px;
   }
 
   .repo h3 {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   .repo p {
-      font-size: 1em;
+    font-size: 1em;
   }
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: var(--background-container);
+  margin: 50px;
+}
+
+.skill {
+  display: flex;
+  align-items: center; 
+  gap: 40px; 
+  width: 100%;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin: 0; 
+  font-size: large;
+}
+
+.text-habilidades {
+  margin: 0; 
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+.title-skills{
+  text-align: center; 
+  margin-top: 30px;
 }
