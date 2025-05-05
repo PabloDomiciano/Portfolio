@@ -1,269 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type href="style.css">
-        <link rel="stylesheet" href="social.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <title>Meu portfólio</title>
-    </head>
-    <body>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">Meu Portfólio</a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <button id="theme-toggle" class="theme-toggle">
-                        <span class="toggle-icon"></span>
-                    </button>
-                </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+                </svg>
+                <span class="brand-title">Meu Portfolio</span>
             </div>
-        </nav>
-        <div class="main">
-            <div class="adjustmentHeader">
-                <div class="textContainer">
-                    <h1 id="page-title">Pablo Henrique L. Domiciano</h1>
-                    <p class="p-description">
-                        Sou apaixonado por tecnologia e desenvolvimento de
-                        software,
-                        sempre buscando aprender e aplicar novos conhecimentos
-                        em projetos práticos.
-                        Ao longo da minha formação, desenvolvi habilidades em
-                        diversas áreas, como programação,
-                        desenvolvimento web, e gestão de projetos. Estou
-                        constantemente aprimorando minhas
-                        competências para me tornar um profissional completo e
-                        preparado para os desafios
-                        do mercado de trabalho.
-                    </p>
-                </div>
-                <img class="imgBody" src="img/perfil.jpg" alt="Foto de perfil">
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+
+            <div>
+                <a href="#contact" class="contact-button">Fale Comigo</a>
             </div>
         </div>
-        <div class="social-container">
-            <a
-                href="https://www.linkedin.com/in/pablo-henrique-lopes-domiciano-4b78b1215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                class="social-link linkedin" target="_blank"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a
-                href="https://www.facebook.com/profile.php?id=100006194413483&mibextid=LQQJ4d"
-                class="social-link facebook" target="_blank"><i
-                    class="fab fa-facebook-f"></i></a>
-            <a
-                href="https://www.instagram.com/pablo_domiciano?igsh=Z3ZoZGNzNzU1ajY0&utm_source=qr"
-                class="social-link instagram" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
+    </nav>
+
+    <section>
+        <div class="bg-gradient"></div>
+        <div class="container">
+            <!-- Text Block -->
+            <div class="order-2-lg">
+                <div class="title">
+                    <h1>
+                        <span>Olá, sou
+                            Pablo Henrique
+                        </span>
+                        Desenvolvedor
+                    </h1>
+                </div>
+                <p class="description">
+                    Sou apaixonado por tecnologia e desenvolvimento de
+                    software,
+                    sempre buscando aprender e aplicar novos conhecimentos
+                    em projetos práticos.
+                    Ao longo da minha formação, desenvolvi habilidades em
+                    diversas áreas, como programação,
+                    desenvolvimento web, e gestão de projetos. Estou
+                    constantemente aprimorando minhas
+                    competências para me tornar um profissional completo e
+                    preparado para os desafios
+                    do mercado de trabalho.
+                </p>
+                <div class="buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-outline">Contato</a>
+                </div>
+            </div>
+
+            <!-- Image Block -->
+            <div class="order-1-lg image-wrapper">
+                <div class="gradient-border">
+                    <div class="gradient-border-inner">
+                        <img src="./img/perfil/perfil.jpeg" alt="Pablo Henrique">
+                    </div>
+                </div>
+                <div class="blur-accent"></div>
+                <div class="blur-primary"></div>
+            </div>
         </div>
 
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img class="imgRadius" src="img/projetoUm.jpg"
-                        alt="Primeiro projeto"/>
-                    <div class="container-button">
-                        <a href="microDevs.html" class="view-button">Ver +</a>
-                    </div>
-                    <div>
-                        <h3>Gerenciador MicroDevs</h3>
-                        <p class="text-description">
-                            Este projeto, desenvolvido com React, é uma
-                            aplicação de organização de projetos que facilita a
-                            gestão e o acompanhamento de tarefas. Com uma
-                            interface intuitiva e responsiva, permite aos
-                            usuários criar, editar e monitorar tarefas de forma
-                            eficiente. Utilizando o React para gerenciamento de
-                            estado e renderização de componentes, a aplicação
-                            oferece uma experiência de usuário fluida e
-                            interativa. A solução foi projetada para ajudar
-                            equipes a manterem seus projetos organizados e
-                            melhorar a produtividade.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img class="imgRadius" src="img/projetoDois.jpg"
-                        alt="Segundo projeto" />
-                    <div class="container-button">
-                        <a href="#" class="view-button">Ver +</a>
-                    </div>
-                    <div>
-                        <h3>Projeto 2</h3>
-                        <p class="text-description">
-                            O {nome projeto} é um projeto inovador que visa
-                            [objetivo principal do projeto]. Este projeto
-                            irá [descrever brevemente o escopo e as
-                            principais atividades], buscando [resultado
-                            esperado ou impacto pretendido]. Através de
-                            [métodos ou tecnologias utilizadas], esperamos
-                            [benefício ou transformação desejada].</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img class="imgRadius" src="img/projetoTres.jpg"
-                        alt="Terceiro projeto" />
-                    <div class="container-button">
-                        <a href="#" class="view-button">Ver + </a>
-                    </div>
-                    <div>
-                        <h3>Projeto 3</h3>
-                        <p class="text-description">
-                            O {nome projeto} é um projeto inovador que visa
-                            [objetivo principal do projeto]. Este projeto
-                            irá [descrever brevemente o escopo e as
-                            principais atividades], buscando [resultado
-                            esperado ou impacto pretendido]. Através de
-                            [métodos ou tecnologias utilizadas], esperamos
-                            [benefício ou transformação desejada].</p>
-                    </div>
-                </div>
-            </div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <p>Rolar para explorar</p>
+            <div class="bounce">↓</div>
         </div>
-        <div>
-            <h1 class="title-skills">Habilidades</h1>
-        </div>
-        <div class="skills-container">
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    alt="HTML" />
-                <div class="skill-info">
-                    <p class="skill-name">HTML</p>
-                    <p class="text-habilidades">Sou um iniciante em HTML, focado
-                        em aprender e aplicar as melhores práticas para criar
-                        estruturas web eficazes. Estou desenvolvendo habilidades
-                        na construção de layouts limpos e funcionais, e na
-                        utilização de tags semânticas para melhorar a
-                        acessibilidade e a organização do conteúdo.</p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                    alt="CSS" />
-                <div class="skill-info">
-                    <p class="skill-name">CSS</p>
-                    <p class="text-habilidades">Estou
-                        empenhado em aprender a criar designs visualmente
-                        atraentes e responsivos. Estou explorando a criação de
-                        layouts adaptáveis, a implementação de estilos
-                        personalizados e a aplicação de boas práticas para
-                        garantir que as páginas web tenham uma aparência
-                        profissional e se ajustem bem a diferentes
-                        dispositivos.</p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    alt="JavaScript" />
-                <div class="skill-info">
-                    <p class="skill-name">JavaScript</p>
-                    <p class="text-habilidades">Estou começando a explorar o
-                        potencial desta poderosa
-                        linguagem de programação para adicionar interatividade e
-                        dinamismo às páginas web. Estou aprendendo a manipular o
-                        DOM, criar funções e eventos para melhorar a experiência
-                        do usuário, e desenvolver scripts que tornam as páginas
-                        mais interativas e funcionais. Estou comprometido em
-                        construir uma base sólida para avançar em projetos mais
-                        complexos e integrar JavaScript de forma eficiente em
-                        meus projetos web.</p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    alt="React" />
-                <div class="skill-info">
-                    <p class="skill-name">React</p>
-                    <p class="text-habilidades">Estou
-                        começando a aprender a criar interfaces de usuário
-                        dinâmicas e interativas utilizando esta biblioteca
-                        popular. Estou explorando conceitos fundamentais como
-                        componentes, props e estado, além de trabalhar com a
-                        virtual DOM para otimizar o desempenho das aplicações.
-                        Meu objetivo é construir aplicações web escaláveis e
-                        eficientes, aproveitando o poder do React para criar
-                        experiências de usuário envolventes e modernas.</p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                    alt="Node.js" />
-                <div class="skill-info">
-                    <p class="skill-name">Node.js</p>
-                    <p class="text-habilidades">Estou
-                        começando a explorar o desenvolvimento de aplicações
-                        back-end utilizando esta plataforma poderosa baseada em
-                        JavaScript. Estou aprendendo a criar servidores,
-                        gerenciar rotas e trabalhar com módulos para construir
-                        aplicações escaláveis e eficientes. Meu foco é entender
-                        como integrar Node.js com outras tecnologias e criar
-                        aplicações robustas e de alto desempenho.</p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                    alt="Python" />
-                <div class="skill-info">
-                    <p class="skill-name">Python</p>
-                    <p class="text-habilidades">Estou
-                        desenvolvendo uma base sólida na linguagem conhecida
-                        pela sua simplicidade e legibilidade. Estou aprendendo a
-                        escrever scripts, trabalhar com bibliotecas e manipular
-                        dados para resolver problemas de programação e
-                        automação. Estou empolgado para explorar as diversas
-                        aplicações do Python.
-                    </p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                    alt="MySQL" />
-                <div class="skill-info">
-                    <p class="skill-name">MySQL</p>
-                    <p class="text-habilidades">
-                        Estou focado em entender como estruturar dados, criar
-                        tabelas, e realizar consultas SQL para manipular e
-                        extrair informações. Meu objetivo é construir
-                        habilidades em design de banco de dados e otimização
-                        de consultas para suportar aplicações web e outros
-                        projetos de dados.</p>
-                </div>
-            </div>
-            <div class="skill">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                    alt="Git" />
-                <div class="skill-info">
-                    <p class="skill-name">Git</p>
-                    <p class="text-habilidades">Estou aprendendo a utilizar
-                        o sistema de controle de versão para gerenciar e
-                        versionar meus projetos de código. Estou explorando
-                        conceitos fundamentais como commits, branches e
-                        merges, além de me familiarizar com plataformas como
-                        GitHub para colaborar em projetos e manter o
-                        histórico do código de forma organizada e
-                        eficiente.</p>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            &copy; 2024 Pablo Henrique L. Domiciano. Todos os direitos
-            reservados.
-        </footer>
-        <script src="index.js"></script>
-    </body>
+    </section>
+</body>
+
 </html>

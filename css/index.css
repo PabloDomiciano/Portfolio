@@ -1,0 +1,262 @@
+:root {
+  --primary: #6366f1;
+  --accent: #6366f1;
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+section {
+  position: relative;
+  padding-top: 5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(99, 102, 241, 0.05),
+    rgba(236, 72, 153, 0.05)
+  );
+  z-index: -10;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .order-1-lg {
+    order: 1;
+  }
+
+  .order-2-lg {
+    order: 2;
+  }
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.title span {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  opacity: 0.8;
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: hsl(217, 91%, 55%);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.gradient-border {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to bottom right,
+    var(--accent),
+    rgba(99, 102, 241, 0.5)
+  );
+  padding: 4px;
+}
+
+.gradient-border-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gradient-border-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.blur-accent,
+.blur-primary {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(40px);
+}
+
+.blur-accent {
+  top: 0;
+  right: 0;
+  width: 6rem;
+  height: 6rem;
+  background: rgba(236, 72, 153, 0.1);
+  transform: translate(2rem, -2rem);
+}
+
+.blur-primary {
+  bottom: 0;
+  left: 0;
+  width: 8rem;
+  height: 8rem;
+  background: rgba(99, 102, 241, 0.1);
+  transform: translate(-2rem, 2rem);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.scroll-indicator p {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-size: 0.875rem;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.nav-inner {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--accent);
+}
+
+.brand-title {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.nav-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground), 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.contact-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: hsl(217, 91%, 55%);
+}
