@@ -34,10 +34,9 @@
     </nav>
 
     <section>
-        <div class="bg-gradient"></div>
         <div class="container">
             <!-- Text Block -->
-            <div class="order-2-lg">
+            <div>
                 <div class="title">
                     <h1>
                         <span>Olá, sou
@@ -63,20 +62,19 @@
                     <a href="#projects" class="btn btn-primary">Ver Projetos</a>
                     <a href="#contact" class="btn btn-outline">Contato</a>
                 </div>
-            </div>
 
-            <!-- Image Block -->
-            <div class="order-1-lg image-wrapper">
-                <div class="gradient-border">
-                    <div class="gradient-border-inner">
-                        <img src="./img/perfil/perfil.jpeg" alt="Pablo Henrique">
-                    </div>
-                </div>
-                <div class="blur-accent"></div>
-                <div class="blur-primary"></div>
             </div>
         </div>
-
+        <!-- Image Block -->
+        <div class="order-1-lg image-wrapper">
+            <div class="gradient-border">
+                <div class="gradient-border-inner">
+                    <img src="./img/perfil/perfil.jpeg" alt="Pablo Henrique">
+                </div>
+            </div>
+            <div class="blur-accent"></div>
+            <div class="blur-primary"></div>
+        </div>
         <!-- Scroll Down Indicator -->
         <div class="scroll-indicator">
             <p>Rolar para explorar</p>
@@ -88,7 +86,7 @@
     <section id="features" class="section-padding bg-secondary">
         <div class="container-section-development">
             <div class="title-description">
-                <h2 class="title">Sobre Mim</h2>
+                <h2 class="title-me">Sobre Mim</h2>
                 <p class="description">
                     Sou um desenvolvedor web iniciante em busca de oportunidades para aprender e crescer.
                     Aqui estão algumas áreas nas quais estou me desenvolvendo:
@@ -116,6 +114,74 @@
             </div>
         </div>
     </section>
+    <section id="projects" class="projects-section">
+        <div class="container-projects ">
+            <div class="header">
+                <h2>Meus Projetos</h2>
+                <p>
+                    Confira alguns dos meus trabalhos mais recentes. Cada projeto mostra diferentes habilidades e
+                    tecnologias que venho utilizando.
+                </p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-button active" data-filter="all">Todos</button>
+                <button class="tab-button" data-filter="React">React</button>
+                <button class="tab-button" data-filter="HTML">HTML</button>
+                <button class="tab-button" data-filter="CSS">CSS</button>
+                <button class="tab-button" data-filter="JavaScript">JavaScript</button>
+                <button class="tab-button" data-filter="Python">Python</button>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card" data-tech="Python">
+                    <img src="./img/projects/farmedicare.png" alt="Farmedicare" class="project-image">
+                    <h3 class="title-projects">Farmedicare</h3>
+                    <p>Projeto desenvolvido em Python com Django, para administrar e controlar o uso de medicamentos em
+                        animais de fazenda</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>SQLite</span>
+                    </div>
+                    <a href="https://github.com/seu-usuario/farmedicare" target="_blank" class="github-button">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card" data-tech="Python">
+                    <img src="./img/projects/corridinha.png" alt="Corridinha" class="project-image">
+                    <h3>Corridinha</h3>
+                    <p>Projeto com foco em desenvolvimento de jogos em Pygame, estudo da arquitetura e métricas
+                        importantes.</p>
+                    <div class="tech-stack">
+                        <span>PyGame</span>
+                    </div>
+                    <a href="https://github.com/seu-usuario/farmedicare" target="_blank" class="github-button">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card" data-tech="React">
+                    <img src="./img/projects/leilao.png" alt="Leilão de Carros" class="project-image">
+                    <h3>Leilão de Carros</h3>
+                    <p>Criado com foco em estudos de desenvolvimento web, utilizando um framework simples para práticas de
+                        programação full stack.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Figma</span>
+                    </div>
+                    <a href="https://github.com/seu-usuario/farmedicare" target="_blank" class="github-button">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script externo -->
+    <script src="./script/projects.js" defer></script>
 </body>
 
 </html>
